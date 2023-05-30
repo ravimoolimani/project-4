@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }  
+  /* Variables */
+:root {
+    --light-text: #ffffff;
+    --dark-text: hsl(229, 25%, 31%);
+    --score-text:  #656565;
+    --outline: hsl(217, 16%, 45%);
+    --bg-grad-1: hsl(214, 47%, 23%);
+    --bg-grad-2: hsl(237, 49%, 15%);
+    --scissors-1:#BD00FF;
+    --scissors-2:#BD00FF;
+    --paper-1:#0074B6;
+    --paper-2:#0074B6;
+    --rock-1: hsl(40, 84%, 53%);
+    --rock-2: hsl(40, 84%, 53%);
+    --shadow-light: #00000026;
+    --shadow-med: #0000004d;
+  }
+  
+html,body{
+    background-color: #8CC461;
+}
+.h1 {
+    position: relative;
+    top:640px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size:91px;
+    color: white;
+}
+.h2 {
+    position: relative;
+    top:650px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size:91px;
+    color: white;
+}
+/*play again button*/
+.play-again {
+    position: absolute;
+    background: #fff;
+    bottom: 1rem;
+    right: 25rem;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 0.7rem;
+    color: var(--dark-text);
+    padding: 0.6rem 3.5rem;
+    font-family: 'Roboto';
+    text-transform: 'Roboto';
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    /*margin-left:1150px;
+    margin-top: 350px;*/
+    cursor: pointer;
+  }
+  .play-again:focus {
+    border: 2px solid white;
+  }
+  /* Rules Button */
+.rules-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 0.6rem;
+    color: var(--light-text);
+    padding: 1rem 3.8rem;
+    font-family: "Roboto";
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+  .rules-btn:focus {
+    border: 2px solid #fff;
+  }
+  
+  /* Rules Modal */
+  .modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    background: var(--shadow-med);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  .modal__container {
+    background: #fff;
+    border-radius: 0.5rem;
+  }
+  .modal__header {
+      position: absolute;
+      left: 80%;
+      top: 45%;
+      width: 18%;
+      height: 40%;
+      padding: 1.5rem;
+      background-color: #004429;
+      border: 5px solid white;
+      border-radius: 8px;
+  }
+  .modal__heading {
+    font-family: Roboto;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: white;
+  }
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  
+  .close-btn {
+    position: absolute;
+    left: 90%;
+    top: -16%;
+    width: 18%;
+    height: 18%;
+    border-radius: 50%;
+    z-index: 1;
+    border:5px solid #FFFFFF;
+    background: #FF0000;
+    cursor: pointer;
+  }
+  .rules-box{
+    position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 10px;
+  top: 115px;
+  
+  background: #FFD600;
+  }
+  .rules-box1{
+    position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 10px;
+  top: 158px;
+  background: #FFD600;
+  }
+  .rules-box2{
+    position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 10px;
+  top: 245px;
+  background: #FFD600;
+  }
+  .rules-box3{
+    position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 10px;
+  top: 325px;
+  background: #FFD600;
+  }
+  
+  .show-modal {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  
+  
