@@ -276,6 +276,7 @@ line-height: 20px;
   padding-bottom: 1.5rem;
 }
 .play-again {
+  position:absolute;
   background: #fff;
   outline: none;
   border: 2px solid transparent;
